@@ -12,8 +12,8 @@ ReactDOM.render(
             <CartProvider>
                 <App />
             </CartProvider>
-    </ProductProvider>
+        </ProductProvider>
     </UserProvider>,
-  
+
     document.getElementById("root")
-  );
+);

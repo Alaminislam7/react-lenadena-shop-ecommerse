@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import PropsTypes from 'prop-types';
-import img from '../../assets/mainBcg.jpeg';
+// import img from '../../assets/mainBcg.jpeg';
 
 export default function Product({image, title, id, price}) {
   
   return (
     <article className="product">
       <div className="img-container">
-        <img src={image || img} alt={title || 'default'}/>
+        <img src={image} alt={title || 'default'}/>
         <Link to={`products/${id}`} className='btn btn-primary product-link'>
           details
         </Link>
